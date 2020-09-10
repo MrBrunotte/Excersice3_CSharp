@@ -11,5 +11,11 @@ namespace Inheritence
         {
             this.LenghtOfLegs = lenghtoflegs;
         }
+
+        // polymorfism 
+        public override string Stats()
+        {
+            return $"{base.Stats()} {LenghtOfLegs}";
+        }
     }
 }

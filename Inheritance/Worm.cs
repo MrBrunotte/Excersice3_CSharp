@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Inheritance
 {
-    public class Worm : Animal
+    public class Worm : Animals
     {
         public string Slimy { get; set; }
 
@@ -16,6 +16,11 @@ namespace Inheritance
         public override void DoSound()
         {
             Console.WriteLine("Worms don't make sounds!");
+        }
+
+        public override string Stats()
+        {
+            return $"{base.Stats()} {Slimy}";
         }
     }
 }

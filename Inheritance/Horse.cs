@@ -5,7 +5,7 @@ using System.Text;
 namespace Inheritence
 {
     // Subclass Horse inherits from Animal
-    public class Horse : Animal
+    public class Horse : Animals
     {
         public string Color { get; set; }
 
@@ -18,6 +18,11 @@ namespace Inheritence
         public override void DoSound()
         {
             Console.WriteLine("EEEEAHHH EEEEAHHH");
+        }
+
+        public override string Stats()
+        {
+            return $"{base.Stats()} {Color}";
         }
     }
 }

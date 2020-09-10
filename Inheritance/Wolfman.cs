@@ -16,5 +16,6 @@ namespace Inheritance
         {
             Console.WriteLine("I am the WOLFMAN!");
         }
+
     }
 }

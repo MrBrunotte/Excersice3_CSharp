@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Inheritence
 {
-    public abstract class Animal
+    public abstract class Animals
     {
         // public properties
         public string Name { get; set; }
@@ -14,7 +14,7 @@ namespace Inheritence
         public int Height { get; set; }
 
         // constructor to instatiate (create an Animal object) an Animal 
-        public Animal(string name, string type, int weight, int height)
+        public Animals(string name, string type, int weight, int height)
         {
             this.Name = name;
             this.Type = type;
@@ -26,9 +26,10 @@ namespace Inheritence
         // abstract class named DoSound
         public abstract void DoSound();
 
+        // Ploymorfism 
         public virtual string Stats()
         {
-            return $"{Name} {Type} {Weight} {Height}";
+            return $"{Name} {Type} {Weight} {Height}"; // using interpolation
         }
     }
 

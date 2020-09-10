@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Encapsulation
 {
-    class Person
+    public class Person
     {
         // STEPS
         /* 1. Create private variables convention is _age for a private variable called age!

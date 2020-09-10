@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Inheritence
 {
-    public class Dog : Animal
+    public class Dog : Animals
     {
         // create one unique property
         public string Breed { get; set; }
@@ -17,6 +17,17 @@ namespace Inheritence
         public override void DoSound()
         {
             Console.WriteLine("WOFF WOFF");
+        }
+
+        // polymorfism 
+        public override string Stats()
+        {
+            return $"{base.Stats()} {Breed}";
+        }
+
+        public string ReturnString()
+        {
+            return $"\t\"This method returns this useless string\"";
         }
     }
 }

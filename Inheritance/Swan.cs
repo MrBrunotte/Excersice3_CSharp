@@ -12,5 +12,10 @@ namespace Inheritance
         {
             this.Color = color;
         }
+
+        public override string Stats()
+        {
+            return $"{base.Stats()} {Color}";
+        }
     }
 }
