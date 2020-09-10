@@ -55,16 +55,14 @@ namespace Inheritance
             //3.3 - 8 skapa en lista för hundar
             List<Dog> dogs = new List<Dog>();
             //dogs.Add(horse);
-
-
             
-           
             foreach (var animal in animals)
             {
                 if (animal is IPerson person)
                 {
-                    // todo this does not work, it prints the sound of the wolf!
+                    Console.WriteLine("Talk() method from IPerson interface:");
                     person.Talk();
+                    Console.WriteLine("\n");
                 }
                 Console.WriteLine($"Print all animal stats: {animal.Stats()}");
                 Console.WriteLine($"Print animal type: {animal.GetType().Name}");
