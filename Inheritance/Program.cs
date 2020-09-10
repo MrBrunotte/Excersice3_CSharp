@@ -58,7 +58,7 @@ namespace Inheritance
 
 
             
-
+           
             foreach (var animal in animals)
             {
                 if (animal is IPerson person)
@@ -78,13 +78,13 @@ namespace Inheritance
             foreach (var animal in animals)
             {
                 
-                if (animal is Dog)
+                if (animal is Dog dogType)
                 {
                     Console.WriteLine($"\tPrint only stats if animal is dog: {animal.Stats()}");
+                    Console.WriteLine(dogType.ReturnString());
                 }
             }
-            Console.WriteLine("\nprints the dog method ReturnString()");
-            Console.WriteLine(dog.ReturnString());
+            
         }
     }
 }
