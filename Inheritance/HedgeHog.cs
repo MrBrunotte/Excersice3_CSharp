@@ -15,7 +15,7 @@ namespace Inheritence
         }
         public override void DoSound()
         {
-            Console.WriteLine("No sound just spearing with spikes!");
+            Console.WriteLine("Hedgehogs dont talk, they just spear you with their spikes!");
         }
     }
 }

@@ -11,7 +11,5 @@ namespace Inheritence
         {
             this.LenghtOfLegs = lenghtoflegs;
         }
-
-        public Flamingo():base(null, null, 0, 0, 0) { }
     }
 }
